@@ -1,0 +1,8 @@
+activity,resource_id,machine_id,mean_cycle_time_min,sd_cycle_time_min,base_wait_min,defect_probability,rework_probability,capacity_weight
+Cutting,Operator_A,CNC_01,6.0,1.1,2.0,0.02,0.005,1.0
+Machining,Operator_B,CNC_02,9.0,1.8,5.0,0.03,0.01,0.92
+Initial Inspection,Inspector_1,INS_01,4.5,0.8,8.0,0.06,0.02,0.72
+Assembly,Operator_C,ASM_01,12.0,2.2,10.0,0.04,0.025,0.65
+Functional Testing,Tester_1,TEST_01,10.5,2.5,12.0,0.07,0.05,0.58
+Packaging,Operator_D,PACK_01,5.5,1.0,4.0,0.015,0.005,0.9
+Release,Clerk_1,REL_01,2.5,0.5,1.0,0.005,0.0,1.0
