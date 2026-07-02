@@ -16,3 +16,5 @@ datasets/prepared/
 
 results/*
 !results/.gitkeep
+datasets/*.zip
+datasets/*.zip
