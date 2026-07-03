@@ -489,7 +489,7 @@ Universidad Autónoma Metropolitana Azcapotzalco (UAM-A), Mexico
 Department of Electrical Engineering  
 Universidad Autónoma Metropolitana Azcapotzalco (UAM-A), Mexico
 
-### Eric Alfredo-Rincón García
+### Eric Alfredo Rincón-García
 Department of Electrical Engineering  
 Universidad Autónoma Metropolitana Azcapotzalco (UAM-A), Mexico
 
@@ -513,7 +513,7 @@ Universidad Autónoma Metropolitana Azcapotzalco (UAM-A), Mexico
     Dopslaf, Mariam and
     Mora-Gutiérrez, Roman Anselmo and
     de-los-Cobos-Silva, Sergio Gerardo and
-    Rincón García, Eric Alfredo and
+    Rincón-García, Eric Alfredo and
     Lara-Velázquez, Pedro and
     Gutiérrez-Andrade, Miguel Ángel
   },
