@@ -288,33 +288,6 @@ results/data_quality_issues/
 
 ---
 
-# Paper Reproduction
-
-Generate tables used in the manuscript:
-
-```bash
-python src/10_generate_paper_tables.py
-```
-
-Generate discussion text:
-
-```bash
-python src/11_results_discussion_tex.py
-```
-
-Generate manuscript figures:
-
-```bash
-python src/12_generate_paper_figures.py
-```
-
-Generate the real-world experimental dashboard:
-
-```bash
-python src/13_generate_real_datasets_dashboard.py
-```
-
----
 
 # Main Outputs
 
