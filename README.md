@@ -75,7 +75,7 @@ These datasets were used to evaluate:
 │
 ├── src/
 │
-│   # Synthetic Manufacturing Pipeline
+│   #Synthetic Manufacturing Pipeline
 │   ├── 00_generate_synthetic_dataset.py
 │   ├── 01_vsm_kpis.py
 │   ├── 02_network_features.py
@@ -83,20 +83,10 @@ These datasets were used to evaluate:
 │   ├── 04_digital_twin_scenarios.py
 │   ├── 05_ablation_and_statistics.py
 │
-│   # Figure Generation
-│   ├── 06_generate_figures.py
-│
-│   # Real-World Dataset Pipeline
+│   #Real-World Dataset Pipeline
 │   ├── 07_prepare_real_datasets.py
 │   ├── 08_run_dataset_experiment.py
 │   ├── 09_real_dataset_ml.py
-│
-│   # Paper Reproduction Utilities
-│   ├── 10_generate_paper_tables.py
-│   ├── 11_results_discussion_tex.py
-│   ├── 12_generate_paper_figures.py
-│   └── 13_generate_real_datasets_dashboard.py
-│
 ├── results/
 │   ├── synthetic/
 │   ├── bpi2017/
