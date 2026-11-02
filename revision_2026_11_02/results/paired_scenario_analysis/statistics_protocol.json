@@ -1,9 +1,0 @@
-{
-  "input": "output/IJAMT_Code_Audit/results/original_reproduction/scenario_replications.csv",
-  "model": "Original parameter-factor Monte Carlo scenario sampler",
-  "pairing": "Shared initial seed 1000+replication; random draw paths may diverge across parameter settings.",
-  "bootstrap_blocks": 10000,
-  "bootstrap_seed": 20261024,
-  "multiplicity": "Holm correction across five baseline comparisons within each KPI; not across all KPI families.",
-  "interpretation": "Conditional scenario differences, not empirically estimated effects of PM, ML, XAI, or CNA."
-}

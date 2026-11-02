@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript and this repository."
+type: software
+title: "Data Driven Value Stream Mapping and Design"
+repository-code: "https://github.com/emontes200892/data-driven-vsm-vsd-framework"
+url: "https://github.com/emontes200892/data-driven-vsm-vsd-framework"
+authors:
+  - family-names: Montes-Orozco
+    given-names: Edwin
+  - family-names: Dopslaf
+    given-names: Mariam
+  - family-names: Mora-Gutiérrez
+    given-names: Roman Anselmo
+  - family-names: de-los-Cobos-Silva
+    given-names: Sergio Gerardo
+  - family-names: Rincón-García
+    given-names: Eric Alfredo
+  - family-names: Lara-Velázquez
+    given-names: Pedro
+  - family-names: Gutiérrez-Andrade
+    given-names: Miguel Ángel
+preferred-citation:
+  type: unpublished
+  title: "A Closed-Loop Data-Driven Framework for Value Stream Mapping and Future-State Design"
+  year: 2026
+  authors:
+    - family-names: Montes-Orozco
+      given-names: Edwin
+    - family-names: Dopslaf
+      given-names: Mariam
+    - family-names: Mora-Gutiérrez
+      given-names: Roman Anselmo
+    - family-names: de-los-Cobos-Silva
+      given-names: Sergio Gerardo
+    - family-names: Rincón-García
+      given-names: Eric Alfredo
+    - family-names: Lara-Velázquez
+      given-names: Pedro
+    - family-names: Gutiérrez-Andrade
+      given-names: Miguel Ángel
