@@ -1,6 +1,0 @@
-experiment,f1,precision,recall,accuracy,confusion_matrix,features
-activity_majority_train_only,1.0,1.0,1.0,1.0,"[[36224, 0], [0, 1276]]",
-operational_only,0.4657878217200251,0.38848167539267014,0.5815047021943573,0.9546133333333333,"[[35056, 1168], [534, 742]]",cycle_time_min|waiting_time_min|queue_before|wip_before
-network_only_train,0.9619298906897852,0.9266521423384169,1.0,0.9973066666666667,"[[36123, 101], [0, 1276]]",degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality
-operational_plus_network_train,0.7450980392156863,0.8909487459105779,0.640282131661442,0.9850933333333334,"[[36124, 100], [459, 817]]",cycle_time_min|waiting_time_min|queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality
-activity_one_hot,1.0,1.0,1.0,1.0,"[[36224, 0], [0, 1276]]",one-hot activity (training vocabulary)

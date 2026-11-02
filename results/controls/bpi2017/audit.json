@@ -1,0 +1,100 @@
+{
+  "input": "datasets/prepared/bpi2017_prepared.csv",
+  "sha256": "3bc69a53a1e256ac8cdd33472c948b94f5d0355f36e16eea79f07e5071c5c17c",
+  "input_rows": 250000,
+  "excluded_timestamp_parse_rows": 0,
+  "timestamp_parser": "mixed",
+  "ordering": "stable start_ts",
+  "class_weight": "balanced",
+  "scope": "Retrospective event-log label classification, not future rework prediction.",
+  "split": "chronological rows by start_ts: 70/15/15; validation reserved, no model selection performed",
+  "windows": {
+    "train": {
+      "events": 175000,
+      "cases": 22697,
+      "start_min": "2016-01-01T11:19:38.914000+00:00",
+      "start_max": "2016-09-23T10:12:59.192000+00:00",
+      "rework_counts": {
+        "0": 171531,
+        "1": 3469
+      }
+    },
+    "validation": {
+      "events": 37500,
+      "cases": 6477,
+      "start_min": "2016-09-23T10:12:59.464000+00:00",
+      "start_max": "2016-11-11T14:28:09.887000+00:00",
+      "rework_counts": {
+        "0": 36770,
+        "1": 730
+      }
+    },
+    "test": {
+      "events": 37500,
+      "cases": 5598,
+      "start_min": "2016-11-11T14:28:13.015000+00:00",
+      "start_max": "2017-02-01T13:53:37.762000+00:00",
+      "rework_counts": {
+        "0": 36654,
+        "1": 846
+      }
+    }
+  },
+  "case_overlap": {
+    "train_validation": 1732,
+    "train_test": 7,
+    "validation_test": 1571
+  },
+  "training_end_ts_at_or_after_validation_start": 1732,
+  "pre_test_rows_end_ts_at_or_after_test_start": 1571,
+  "missing_operational_fields": [],
+  "constant_operational_fields": [
+    "waiting_time_min"
+  ],
+  "training_graph_activities": 26,
+  "full_graph_activities": 26,
+  "changed_training_node_features_using_full_log": {
+    "degree_centrality": 13,
+    "betweenness_centrality": 25,
+    "closeness_centrality": 13,
+    "eigenvector_centrality": 26
+  },
+  "rework_deterministic_within_activity_on_full_input": true,
+  "activities_with_unique_training_network_signature": 20,
+  "all_network_signature_activity_counts": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    4,
+    1
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "networkx": "3.7"
+  },
+  "cautions": [
+    "Current-event durations and end timestamps may not be available at event start.",
+    "A fixed train-only activity signature can reconstruct activity identity and an activity-defined label.",
+    "An audit on synthetic input does not reproduce or validate BPI2017 metrics."
+  ],
+  "status": "executed; see metrics and saved predictions"
+}
