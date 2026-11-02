@@ -1,0 +1,27 @@
+activity,events,positives,label_values,positive_rate
+A_Accepted,7142,0,1,0.0
+A_Cancelled,2205,0,1,0.0
+A_Complete,6916,0,1,0.0
+A_Concept,7037,0,1,0.0
+A_Create Application,7079,0,1,0.0
+A_Denied,785,0,1,0.0
+A_Incomplete,4259,0,1,0.0
+A_Pending,2769,0,1,0.0
+A_Submitted,4635,0,1,0.0
+A_Validating,7643,0,1,0.0
+O_Accepted,2887,0,1,0.0
+O_Cancelled,3831,0,1,0.0
+O_Create Offer,9565,0,1,0.0
+O_Created,9541,0,1,0.0
+O_Refused,895,0,1,0.0
+O_Returned,5037,5037,1,1.0
+O_Sent (mail and online),8784,0,1,0.0
+O_Sent (online only),365,0,1,0.0
+W_Assess potential fraud,502,0,1,0.0
+W_Call after offers,43267,0,1,0.0
+W_Call incomplete files,30065,0,1,0.0
+W_Complete application,33481,0,1,0.0
+W_Handle leads,10665,0,1,0.0
+W_Personal Loan collection,1,0,1,0.0
+W_Shortened completion ,48,0,1,0.0
+W_Validate application,40129,0,1,0.0

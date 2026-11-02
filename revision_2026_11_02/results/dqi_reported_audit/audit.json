@@ -1,0 +1,96 @@
+{
+  "input": "output/IJAMT_Code_Audit/code/datasets/prepared/data_quality_issues_prepared.csv",
+  "sha256": "ed26ee2e56d39dda9ec69e51e26a634e9e4346fd51fcfdc7a91723f59dc17f1b",
+  "input_rows": 8607,
+  "excluded_timestamp_parse_rows": 6,
+  "timestamp_parser": "reported",
+  "class_weight": "balanced",
+  "scope": "Retrospective event-log label classification, not future rework prediction.",
+  "split": "chronological rows by start_ts: 70/15/15; validation reserved, no model selection performed",
+  "windows": {
+    "train": {
+      "events": 6020,
+      "cases": 170,
+      "start_min": "2021-06-23T15:32:22.366658+00:00",
+      "start_max": "2021-07-01T19:30:24.471294+00:00",
+      "rework_counts": {
+        "1": 4509,
+        "0": 1511
+      }
+    },
+    "validation": {
+      "events": 1290,
+      "cases": 44,
+      "start_min": "2021-07-01T19:30:27.486000+00:00",
+      "start_max": "2021-07-06T17:04:09.680000+00:00",
+      "rework_counts": {
+        "1": 979,
+        "0": 311
+      }
+    },
+    "test": {
+      "events": 1291,
+      "cases": 67,
+      "start_min": "2021-07-06T17:04:19.880166+00:00",
+      "start_max": "2022-02-27T17:15:23.713602+00:00",
+      "rework_counts": {
+        "1": 948,
+        "0": 343
+      }
+    }
+  },
+  "case_overlap": {
+    "train_validation": 7,
+    "train_test": 0,
+    "validation_test": 3
+  },
+  "training_end_ts_at_or_after_validation_start": 7,
+  "pre_test_rows_end_ts_at_or_after_test_start": 3,
+  "missing_operational_fields": [],
+  "constant_operational_fields": [
+    "queue_before",
+    "wip_before"
+  ],
+  "training_graph_activities": 21,
+  "full_graph_activities": 21,
+  "changed_training_node_features_using_full_log": {
+    "degree_centrality": 16,
+    "betweenness_centrality": 18,
+    "closeness_centrality": 17,
+    "eigenvector_centrality": 21
+  },
+  "rework_deterministic_within_activity_on_full_input": false,
+  "activities_with_unique_training_network_signature": 16,
+  "all_network_signature_activity_counts": [
+    1,
+    1,
+    1,
+    1,
+    3,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "networkx": "3.7"
+  },
+  "cautions": [
+    "Current-event durations and end timestamps may not be available at event start.",
+    "A fixed train-only activity signature can reconstruct activity identity and an activity-defined label.",
+    "An audit on synthetic input does not reproduce or validate BPI2017 metrics."
+  ],
+  "status": "executed; see metrics and saved predictions"
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "file": "data/synthetic_event_log.csv",
+    "bytes": 1333725,
+    "sha256": "f81caa96dac104acf08f88ac62e59827b22524efe0026695586503ee28d882ef"
+  },
+  {
+    "file": "data/route_parameters.csv",
+    "bytes": 539,
+    "sha256": "4697cc941a2ec93ea8672176a2b311db05167b507acd875d20548d1d83706e01"
+  },
+  {
+    "file": "datasets/prepared/data_quality_issues_prepared.csv",
+    "bytes": 1473277,
+    "sha256": "ed26ee2e56d39dda9ec69e51e26a634e9e4346fd51fcfdc7a91723f59dc17f1b"
+  },
+  {
+    "file": "datasets/prepared/bpi2019_prepared.csv",
+    "bytes": 36468364,
+    "sha256": "be64ded9207279f4a9add7b8ba708026f8472c783debe7757ecea3be4e32f9d6"
+  },
+  {
+    "file": "datasets/prepared/bpi2017_prepared.csv",
+    "bytes": 42165369,
+    "sha256": "3bc69a53a1e256ac8cdd33472c948b94f5d0355f36e16eea79f07e5071c5c17c"
+  }
+]

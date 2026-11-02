@@ -1,0 +1,10 @@
+{
+  "input_sha256": "be64ded9207279f4a9add7b8ba708026f8472c783debe7757ecea3be4e32f9d6",
+  "timestamp_parser": "pandas mixed-format UTC; stable temporal ordering",
+  "scope": "current-event diagnostic classification, not a future-event forecast",
+  "train_events": 175000,
+  "validation_events": 37500,
+  "test_events": 37500,
+  "train_test_case_overlap": 2424,
+  "validation_used_for_selection": false
+}

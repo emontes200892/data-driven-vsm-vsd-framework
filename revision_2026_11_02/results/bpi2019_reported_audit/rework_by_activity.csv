@@ -1,0 +1,40 @@
+activity,events,positives,label_values,positive_rate
+Block Purchase Order Item,70,0,1,0.0
+Cancel Goods Receipt,502,0,1,0.0
+Cancel Invoice Receipt,1209,0,1,0.0
+Cancel Subsequent Invoice,92,0,1,0.0
+Change Approval for Purchase Order,1285,1285,1,1.0
+Change Currency,5,5,1,1.0
+Change Delivery Indicator,548,548,1,1.0
+Change Final Invoice Indicator,1,1,1,1.0
+Change Price,2094,2094,1,1.0
+Change Quantity,3600,3600,1,1.0
+Change Rejection Indicator,1,1,1,1.0
+Change Storage Location,70,70,1,1.0
+Clear Invoice,32936,0,1,0.0
+Create Purchase Order Item,43190,0,1,0.0
+Create Purchase Requisition Item,7958,0,1,0.0
+Delete Purchase Order Item,1506,0,1,0.0
+Reactivate Purchase Order Item,83,0,1,0.0
+Receive Order Confirmation,5468,0,1,0.0
+Record Goods Receipt,48129,0,1,0.0
+Record Invoice Receipt,38333,0,1,0.0
+Record Service Entry Sheet,12887,0,1,0.0
+Record Subsequent Invoice,26,0,1,0.0
+Release Purchase Order,236,0,1,0.0
+Release Purchase Requisition,95,0,1,0.0
+Remove Payment Block,9683,0,1,0.0
+SRM: Awaiting Approval,271,0,1,0.0
+SRM: Change was Transmitted,263,263,1,1.0
+SRM: Complete,268,0,1,0.0
+SRM: Created,287,0,1,0.0
+SRM: Deleted,29,0,1,0.0
+SRM: Document Completed,278,0,1,0.0
+SRM: In Transfer to Execution Syst.,299,0,1,0.0
+SRM: Ordered,249,0,1,0.0
+SRM: Transaction Completed,1,0,1,0.0
+SRM: Transfer Failed (E.Sys.),6,0,1,0.0
+Set Payment Block,20,0,1,0.0
+Update Order Confirmation,45,0,1,0.0
+Vendor creates debit memo,1055,0,1,0.0
+Vendor creates invoice,36922,0,1,0.0

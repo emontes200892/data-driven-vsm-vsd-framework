@@ -1,0 +1,16 @@
+{
+  "scope": "current-event diagnostic classification",
+  "graph": "training rows only",
+  "validation_used": false,
+  "excluded_direct_target_variables": {
+    "defect_flag": [],
+    "rework_flag": [],
+    "delay_flag": [
+      "waiting_time_min"
+    ],
+    "bottleneck_flag": [
+      "cycle_time_min",
+      "waiting_time_min"
+    ]
+  }
+}

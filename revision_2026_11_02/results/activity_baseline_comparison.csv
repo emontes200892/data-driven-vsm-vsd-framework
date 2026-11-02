@@ -1,0 +1,5 @@
+dataset,test_events,test_positives,operational_RF,operational_plus_network_RF,activity_majority,activity_one_hot_RF,train_validation,train_test,validation_test
+Synthetic,1280,21,0.25,1.0,1.0,1.0,2,0,3
+BPI2017,37500,846,0.2232742822235797,1.0,1.0,1.0,1732,7,1571
+BPI2019,37500,1276,0.4664996869129618,0.960754716981132,1.0,1.0,6063,2424,4642
+DQI,1292,948,0.93521421107628,0.9462915601023018,0.8464285714285714,0.4817073170731707,7,0,3

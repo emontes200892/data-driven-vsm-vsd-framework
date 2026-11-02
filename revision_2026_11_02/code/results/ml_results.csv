@@ -1,0 +1,17 @@
+target,model,network_features,features,accuracy,precision,recall,f1,roc_auc,note
+defect_flag,Random Forest,False,cycle_time_min|waiting_time_min|queue_before|wip_before,0.96484375,0.0,0.0,0.0,0.5669815564552407,retrospective diagnostic task
+defect_flag,XGBoost,False,cycle_time_min|waiting_time_min|queue_before|wip_before,0.96484375,0.0,0.0,0.0,0.5393252361673414,retrospective diagnostic task
+defect_flag,Random Forest,True,cycle_time_min|waiting_time_min|queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,0.96484375,0.0,0.0,0.0,0.6298875393612234,retrospective diagnostic task
+defect_flag,XGBoost,True,cycle_time_min|waiting_time_min|queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,0.9640625,0.0,0.0,0.0,0.6110121457489878,retrospective diagnostic task
+rework_flag,Random Forest,False,cycle_time_min|waiting_time_min|queue_before|wip_before,0.9859375,1.0,0.14285714285714285,0.25,0.9203449449676614,retrospective diagnostic task
+rework_flag,XGBoost,False,cycle_time_min|waiting_time_min|queue_before|wip_before,0.98515625,0.75,0.14285714285714285,0.24,0.9038541548470064,retrospective diagnostic task
+rework_flag,Random Forest,True,cycle_time_min|waiting_time_min|queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,1.0,1.0,1.0,1.0,1.0,retrospective diagnostic task
+rework_flag,XGBoost,True,cycle_time_min|waiting_time_min|queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,1.0,1.0,1.0,1.0,1.0,retrospective diagnostic task
+delay_flag,Random Forest,False,cycle_time_min|queue_before|wip_before,0.88515625,0.8171428571428572,0.7750677506775068,0.7955493741307371,0.9421375004090327,retrospective diagnostic task
+delay_flag,XGBoost,False,cycle_time_min|queue_before|wip_before,0.8921875,0.830945558739255,0.7859078590785907,0.807799442896936,0.9487266442368045,retrospective diagnostic task
+delay_flag,Random Forest,True,cycle_time_min|queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,0.90390625,0.8397790055248618,0.8238482384823849,0.8317373461012312,0.9576852025380846,retrospective diagnostic task
+delay_flag,XGBoost,True,cycle_time_min|queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,0.903125,0.8431372549019608,0.8157181571815718,0.8292011019283747,0.9638415154733326,retrospective diagnostic task
+bottleneck_flag,Random Forest,False,queue_before|wip_before,0.86796875,0.8424657534246576,0.6666666666666666,0.7443267776096822,0.8904387507102293,retrospective diagnostic task
+bottleneck_flag,XGBoost,False,queue_before|wip_before,0.86640625,0.84375,0.6585365853658537,0.7397260273972602,0.8896117611011456,retrospective diagnostic task
+bottleneck_flag,Random Forest,True,queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,0.884375,0.8259587020648967,0.7588075880758808,0.7909604519774012,0.9160977394625758,retrospective diagnostic task
+bottleneck_flag,XGBoost,True,queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,0.88828125,0.8323529411764706,0.7669376693766937,0.7983074753173484,0.9331268834093391,retrospective diagnostic task

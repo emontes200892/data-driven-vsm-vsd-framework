@@ -1,0 +1,4 @@
+Dataset,Nodes,Edges,Density,Weakly Connected Components,Critical Activity
+BPI2017,26,380,0.5846,1,W_Call incomplete files
+BPI2019,39,527,0.3556,1,Record Invoice Receipt
+Data Quality Issues,21,102,0.2429,1,/vgr/pick_up_and_transport

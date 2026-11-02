@@ -1,0 +1,2 @@
+events,cases,activities,resources,observation_hours,mean_case_lead_time_min,median_case_lead_time_min,mean_processing_time_min,mean_waiting_time_min,mean_value_added_ratio,throughput_cases_per_hour,throughput_events_per_hour,defect_rate,rework_rate
+8607,271,21,15,5977.717040817778,44.48398812244773,13.820833083333333,44.48398812244771,44.48398812244771,1.0,0.045335033115405876,1.4398473432630936,0.0,0.748112001858952

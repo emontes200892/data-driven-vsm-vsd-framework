@@ -1,0 +1,6 @@
+metric,test,statistic,pvalue,n_blocks
+lead_time_mean,"Friedman, replication/seed blocks",150.0000000000001,1.3351378873002264e-30,30
+throughput_per_hour,"Friedman, replication/seed blocks",150.0000000000001,1.3351378873002264e-30,30
+wip_mean,"Friedman, replication/seed blocks",150.0000000000001,1.3351378873002264e-30,30
+defect_rate,"Friedman, replication/seed blocks",129.55502392344508,2.958022142004904e-26,30
+rework_rate,"Friedman, replication/seed blocks",119.93230174081245,3.243934840514182e-24,30

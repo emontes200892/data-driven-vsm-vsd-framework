@@ -1,0 +1,93 @@
+{
+  "source": "Executed corrected-code results, not manuscript constants",
+  "configurations": [
+    "G0",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+  ],
+  "lead_time_reduction": [
+    -0.0,
+    4.773335808315093,
+    9.087346103640037,
+    14.515511209722842,
+    22.802396405911917,
+    32.39886753692374
+  ],
+  "throughput_gain": [
+    0.0,
+    8.60363420289081,
+    17.449690554438146,
+    27.90862491076944,
+    46.57985987874413,
+    71.72704736272064
+  ],
+  "WIP_reduction": [
+    -0.0,
+    8.185495637534979,
+    15.166845714954857,
+    21.825667006763737,
+    33.110629895680454,
+    45.09376858877945
+  ],
+  "G5_changes": [
+    32.39886753692374,
+    45.09376858877945,
+    27.628696604600258,
+    45.52447552447554,
+    71.72704736272064
+  ],
+  "network_density": [
+    0.5846153846153846,
+    0.3556005398110661,
+    0.2428571428571428
+  ],
+  "critical_activities": [
+    {
+      "dataset": "bpi2017",
+      "activity": "W_Call incomplete files",
+      "nodes": 26,
+      "edges": 380
+    },
+    {
+      "dataset": "bpi2019",
+      "activity": "Record Goods Receipt",
+      "nodes": 39,
+      "edges": 527
+    },
+    {
+      "dataset": "data_quality_issues",
+      "activity": "/vgr/pick_up_and_transport",
+      "nodes": 21,
+      "edges": 102
+    }
+  ],
+  "RF_without_CNA": [
+    null,
+    null,
+    0.2232742822235797,
+    null,
+    null,
+    0.4664996869129618,
+    0.1559633027522936,
+    0.6421439831844457,
+    0.93521421107628
+  ],
+  "RF_with_CNA": [
+    null,
+    null,
+    1.0,
+    null,
+    null,
+    0.960754716981132,
+    0.2989130434782608,
+    0.995114006514658,
+    0.9462915601023018
+  ],
+  "input_hashes": {
+    "scenario_results.csv": "8aa43b9c68f5eea47f75d946acff13b5b4a8ef841c18846ea3e3c6b30d9bd88c",
+    "real_datasets_ml_results.csv": "9426ecf912f821f918ed7a67f2e1f11f8cf31eede59104c5001d774cbb1acc78"
+  }
+}

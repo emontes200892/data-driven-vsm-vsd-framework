@@ -1,0 +1,68 @@
+{
+  "data_quality_issues_prepared.csv": {
+    "rows": 8607,
+    "cases": 271,
+    "activities": 21,
+    "columns": [
+      "case_id",
+      "event_id",
+      "activity",
+      "resource_id",
+      "machine_id",
+      "product_family",
+      "start_ts",
+      "end_ts",
+      "cycle_time_min",
+      "waiting_time_min",
+      "queue_before",
+      "wip_before",
+      "shift",
+      "defect_flag",
+      "rework_flag"
+    ]
+  },
+  "bpi2019_prepared.csv": {
+    "rows": 250000,
+    "cases": 155771,
+    "activities": 39,
+    "columns": [
+      "case_id",
+      "event_id",
+      "activity",
+      "resource_id",
+      "machine_id",
+      "product_family",
+      "start_ts",
+      "end_ts",
+      "cycle_time_min",
+      "waiting_time_min",
+      "queue_before",
+      "wip_before",
+      "shift",
+      "defect_flag",
+      "rework_flag"
+    ]
+  },
+  "bpi2017_prepared.csv": {
+    "rows": 250000,
+    "cases": 31469,
+    "activities": 26,
+    "columns": [
+      "case_id",
+      "event_id",
+      "activity",
+      "resource_id",
+      "machine_id",
+      "product_family",
+      "start_ts",
+      "end_ts",
+      "cycle_time_min",
+      "waiting_time_min",
+      "queue_before",
+      "wip_before",
+      "shift",
+      "defect_flag",
+      "rework_flag"
+    ]
+  }
+}

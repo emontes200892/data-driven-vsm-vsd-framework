@@ -1,0 +1,13 @@
+dataset,target,model,network_features,features,train_events,test_events,delay_threshold_train_only,bottleneck_cycle_threshold_train_only,bottleneck_waiting_threshold_train_only,accuracy,precision,recall,f1,roc_auc,note
+bpi2019,delay_proxy,Random Forest,False,cycle_time_min|queue_before|wip_before,175000,37500,0.0,816.3862763096945,0.0,,,,,,single_class_target
+bpi2019,delay_proxy,XGBoost,False,cycle_time_min|queue_before|wip_before,175000,37500,0.0,816.3862763096945,0.0,,,,,,single_class_target
+bpi2019,delay_proxy,Random Forest,True,cycle_time_min|queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,175000,37500,0.0,816.3862763096945,0.0,,,,,,single_class_target
+bpi2019,delay_proxy,XGBoost,True,cycle_time_min|queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,175000,37500,0.0,816.3862763096945,0.0,,,,,,single_class_target
+bpi2019,bottleneck_proxy,Random Forest,False,queue_before|wip_before,175000,37500,0.0,816.3862763096945,0.0,,,,,,single_class_target
+bpi2019,bottleneck_proxy,XGBoost,False,queue_before|wip_before,175000,37500,0.0,816.3862763096945,0.0,,,,,,single_class_target
+bpi2019,bottleneck_proxy,Random Forest,True,queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,175000,37500,0.0,816.3862763096945,0.0,,,,,,single_class_target
+bpi2019,bottleneck_proxy,XGBoost,True,queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,175000,37500,0.0,816.3862763096945,0.0,,,,,,single_class_target
+bpi2019,rework_proxy,Random Forest,False,cycle_time_min|waiting_time_min|queue_before|wip_before,175000,37500,0.0,816.3862763096945,0.0,0.9546133333333333,0.38848167539267014,0.5815047021943573,0.4657878217200251,0.7996782429010159,
+bpi2019,rework_proxy,XGBoost,False,cycle_time_min|waiting_time_min|queue_before|wip_before,175000,37500,0.0,816.3862763096945,0.0,0.9658133333333333,0.2857142857142857,0.003134796238244514,0.006201550387596899,0.8378482965103239,
+bpi2019,rework_proxy,Random Forest,True,cycle_time_min|waiting_time_min|queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,175000,37500,0.0,816.3862763096945,0.0,0.9850933333333334,0.8909487459105779,0.640282131661442,0.7450980392156863,0.9989173512494878,
+bpi2019,rework_proxy,XGBoost,True,cycle_time_min|waiting_time_min|queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,175000,37500,0.0,816.3862763096945,0.0,0.9850933333333334,0.8900979325353645,0.6410658307210031,0.7453302961275626,0.998845804960012,

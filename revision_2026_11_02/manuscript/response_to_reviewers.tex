@@ -1,0 +1,104 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.4cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,parskip,enumitem,needspace}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newcommand{\commentitem}[2]{\Needspace{9\baselineskip}\subsection*{Comment #1}\textit{#2}\par\textbf{Response.} }
+\begin{document}
+\begin{center}
+{\Large\bfseries Response to the Editor and Reviewer}\par\medskip
+\textbf{A Closed-Loop Data-Driven Framework for Value Stream Mapping and Future-State Design}\par\smallskip
+The International Journal of Advanced Manufacturing Technology
+\end{center}
+Dear Dr. Russell,
+
+Thank you for the opportunity to revise our manuscript. We have revised the abstract, terminology, methodological interpretation, figures, discussion, and conclusions. We now distinguish synthetic manufacturing simulation from cross-domain analysis of real-world event logs, describe the offline simulation component more precisely, clarify the classification results, and discuss resilience and sustainability without claiming unmeasured benefits.
+
+The original reported results are preserved for comparison, and the revised classification tables use the corrected executions described below. The operational improvement percentages are retained from the reproduced scenario experiments. The revised figures consistently represent the manuscript tables. This revision adds code-level reproduction of the original synthetic and real-log calculations, activity-only diagnostic controls, corrected timestamp parsing, and seed-blocked scenario statistics. Original and corrected outputs are kept separate. The audit does not claim a new physical deployment or a prospective forecasting experiment. Revised editable sources accompany this response. The reproducibility materials for the revised analyses are provided through the public repository, \url{https://github.com/emontes200892/data-driven-vsm-vsd-framework}, in the directory \texttt{revision\_2026\_11\_02/}. This directory contains the corrected scripts, exact prepared inputs, audit predictions, scenario replications, statistical outputs, and documentation, with original and corrected results kept separate. The materials are accessible directly through the repository rather than requiring a separate ZIP attachment in the submission system. We also aligned the proposed-workflow descriptions in Sections 3 and 4 and Algorithm 2 with the executed component scope.
+
+\commentitem{1}{Define VSD explicitly in the abstract.}
+The abstract now introduces Value Stream Mapping (VSM) and Value Stream Design (VSD), distinguishing waste identification from specification of an improved future-state configuration. The abstract remains self-contained.
+
+\textbf{Location:} Abstract and Introduction.
+
+\commentitem{2}{The BPI2017 F1-score of 1.0000 is unusual; check for information leakage and explain the result.}
+We reproduced the original BPI2017 Random Forest comparison, F1 = 0.2243 without CNA and 1.0000 with CNA, on the recovered prepared data and supplied script. Code inspection confirms that the real-log network is built only from the chronological training rows and then frozen for validation and test. No held-out rows enter that network construction.
+
+The prepared BPI2017 target identifies \texttt{O\_Returned}: all and only those events are positive. A training-derived activity-majority rule and an activity-only classifier both attain F1 = 1.0000 on held-out rows. This provides a direct explanation of perfect diagnostic separation without attributing a unique forecasting benefit to network structure. Graph descriptors can act as signatures of activity identity. The score is retained with that restricted interpretation.
+
+We also corrected mixed-format timestamp parsing and specified stable row ordering. The original reader rejected 467 otherwise valid BPI2017 rows; the corrected run retains all 250,000 rows and yields RF F1 = 0.2233 without CNA and 1.0000 with CNA. We report the corrected run and retain the original reproduction in the audit materials. Neither experiment demonstrates prediction of future rework before its occurrence.
+
+\textbf{Location:} Abstract; Sections 4.4, 5.1.1, 5.2, and 6; matched-model and activity-baseline tables; reproducibility package.
+
+\commentitem{3}{Distinguish simulated operational improvements from improvements observed in physical factories.}
+The abstract explicitly identifies the reductions of 32.40\% in lead time, 45.09\% in the workload proxy, 27.63\% in defect rate, and 45.52\% in rework rate, and the 71.73\% calendar-based throughput-proxy increase, as estimates from the synthetic manufacturing simulation relative to its simulated baseline. It states that these are not longitudinal improvements measured after implementation in a physical factory. Results, conclusions, and figure captions use the same evidence boundary.
+
+\textbf{Location:} Abstract; Sections 5.1, 5.3, 6, and 7; Figures 2 and 4.
+
+\commentitem{4}{Clarify digital-twin terminology because the implementation uses historical logs rather than a live physical--digital connection. Consider foundational literature and the DTaaS reference model.}
+The implemented component is now described as offline Monte Carlo simulation (MCS), using predefined factors and supplied synthetic route parameters. Code execution confirms that this is a NumPy scenario sampler, without a shared-resource queueing engine or live physical--digital connection. Digital twins are discussed as related work and a possible deployment architecture. The scope paragraph in Section 2 distinguishes simulation from physical--digital synchronization, citing Grieves and Vickers and Aheleroff et al.'s DTaaS reference architecture. Figure 1 separates the evaluated analytical workflow from proposed physical implementation and subsequent feedback. Live synchronization and an automatically updated physical twin are not claimed.
+
+\textbf{Location:} Section 2, scope paragraph; Sections 3.7, 3.8, 6.2, and 7; Figure 1; bibliography.
+
+\commentitem{5}{ERP, MES, and SCADA capture, record, process, or manage data rather than generating the underlying physical events.}
+The opening paragraph now describes these systems as capturing, recording, processing, and managing records of events arising from physical processes, operators, and field devices. The distinction between recorded observations, derived indicators, and simulated outcomes is clearer elsewhere as well.
+
+\textbf{Location:} Introduction, first paragraph; Sections 3.1 and 3.4.
+
+\commentitem{6}{Avoid redefining abbreviations after first introduction.}
+Acronym definitions have been consolidated in the main text, and later occurrences use the established abbreviations. The abstract remains self-contained. MCS denotes the evaluated offline scenario sampler; DT terminology is reserved for related work and deployment discussion.
+
+\textbf{Location:} Throughout the manuscript.
+
+\commentitem{7}{Synthetic results do not establish transfer of the exact improvement magnitudes to noisy, exception-heavy physical shop floors.}
+We agree and restrict the claim to a controlled simulation comparison. The abstract, external-validity discussion, synthetic results, and conclusions state that the gains depend on the modeled system, assumptions, and intervention configurations. Repeated runs characterize variability within the simulator, not industrial fidelity. The scenario factor table now makes the assumptions explicit. The code does not estimate those factors from PM, ML, XAI, or CNA outputs, so module-effect attribution is not claimed. The discussion identifies the additional evidence needed for transfer: plant-based parameter estimation, independent checking on a separate operating period, implemented interventions, and longitudinal measurements under changing demand, equipment failures, and exceptional routing. No physical deployment is claimed.
+
+\textbf{Location:} Sections 4.6, 5.1, 6.2, and 7.
+
+\commentitem{8}{BPI administrative and procurement logs need explicit domain adaptation before manufacturing VSM and WIP concepts are applied.}
+We added Section 3.1.1 and Table 3. BPI2017 is identified as a loan-application process and BPI2019 as purchase-order processing, with line items as the recorded cases. WIP is an administrative active-case workload analogue in these settings, not physical inventory. Repetition is distinguished from confirmed corrective work, administrative exceptions from physical product defects, and processing duration from domain-validated value creation. The BPI benchmarks assess analytical components across domains, not physical manufacturing gains.
+
+\textbf{Location:} Section 3.1.1; Table 3; Sections 5.2 and 6.
+
+\commentitem{9}{The jump from 0.2243 to 1.0000 with CNA features may indicate leakage, overfitting, or use of future information despite temporal splitting.}
+We addressed this through an executed source and data audit rather than temporal-split wording alone. The real-log script builds a training-only activity-transition graph. The BPI2017 prepared label is deterministic by activity, and the activity-majority and activity-one-hot controls both reproduce perfect classification. BPI2019 also has activity-defined change labels; activity-only controls attain F1 = 1.0000 there as well. These findings limit any claim of incremental structural information beyond activity identity.
+
+The current-event and prospective tasks are now separated. The corrected BPI2017 row split still shares seven cases between training and test, and the BPI2019 split shares 2,424 cases, so unseen-case generalization is not asserted. Current-event durations can also rely on completion or next-event information. A prospective task would require explicit decision times, future horizons, prefix-only attributes, and a case-boundary policy. We therefore interpret the scores as retrospective diagnostic-label classification and do not claim that the audit proves all forms of prospective leakage absent.
+
+The operational bottleneck target in the supplied real-log code is defined from training-activity mean cycle or waiting times, excluding both variables from its predictors. It is not defined from betweenness. We corrected that mismatch between the previous prose and the executable definition. We also corrected the synthetic model to use training-only graph features and exclude its direct delay/bottleneck target variables; original results remain archived for comparison.
+
+\textbf{Location:} Sections 3.3, 3.6, 4.4, 4.6, 5.1.1, 5.2, and 6; audit outputs and corrected scripts.
+
+\commentitem{10}{Simplify conceptual mathematics while retaining useful feature-extraction equations.}
+Repeated conceptual formulations of the analytical workflow and diagnostic components have been replaced with prose. The repeated current/future KPI-vector comparison is condensed to an individual-indicator explanation. Standard WIP and quality-count arithmetic is described in words. The event-log representation, time and aggregation formulas, feature integration, and relative simulation-improvement formulas remain. The operational activity-level proxy definitions and their direct-variable exclusions now match the executable code.
+
+\textbf{Location:} Sections 3.2--3.8.
+
+\commentitem{11}{Relate the work to industrial evolution, resilience, and sustainability, considering the suggested study.}
+Section 6.1 addresses resilience through disruption scenarios and recovery indicators, and sustainability through resource use, emissions, material loss, and worker-related indicators. It distinguishes proposed extensions from measured benefits: nominal KPI improvements alone do not demonstrate resilience or environmental savings. The discussion is linked to sustainability-integrated VSM literature with a verifiable DOI.
+
+The protected link did not identify the additional suggested article unambiguously in the material available to us, so no unverified bibliographic entry has been added. The revised discussion uses the identifiable sustainability-integrated VSM study and specifies concrete evaluation extensions.
+
+\textbf{Location:} Section 6.1; bibliography.
+
+\section*{Additional consistency corrections}
+The real-world dashboard now follows the matched-model table: single-class targets are shown as NA, and synthetic simulation panels are presented separately. Executing the scenario sampler gives a G4 throughput gain of approximately 46.58\%, which rounds to 46.6\%; its table and figure now use the executed value instead of the inconsistent earlier 46.4\% table entry. The synthetic summary preserves the reproduced operational KPI values, with explicit workload and throughput proxy definitions. The original and corrected executions are now documented separately; figures use the corrected-code tables. No figure values are manually adjusted to preserve an earlier conclusion. The duplicate synthetic-results subsection and an incorrect dashboard reference have also been corrected.
+
+\section*{Executed reproducibility and statistical checks}
+The synthetic generator recreates the delivered CSV byte for byte. Re-execution of the original scenario sampler reproduces all five headline percentages to the reported precision. The scenarios use fixed cycle, waiting, quality, and additional-gain factors; the revised methods and factor table make clear that these are assumptions rather than estimated effects of analytical modules.
+
+Because each replication number uses the same initial seed across scenarios, the revised analysis uses seed blocks. Friedman comparisons are followed by two-sided Wilcoxon baseline comparisons with Holm correction across five comparisons within each KPI. Paired-block bootstrap intervals use 10,000 resamples, seed 20261024. G5--G0 differences remain significant within the sampler. These tests quantify conditional stochastic variation, not physical-system calibration uncertainty or causal module benefits.
+
+The supplied code implements activity DFGs and diagnostic classifiers. SHAP, resource/value-flow networks, conformance checking, and a resource-constrained simulator are now identified as architectural extensions rather than executed capabilities. The corrected data reader retains valid mixed-format timestamps and makes temporal tie ordering explicit; original and corrected score tables, prediction files, environments, and input hashes are included.
+
+\section*{References added or clarified}
+\begin{enumerate}[leftmargin=*,itemsep=5pt]
+\item Grieves, M. and Vickers, J. (2017). Digital Twin: Mitigating Unpredictable, Undesirable Emergent Behavior in Complex Systems. In \textit{Transdisciplinary Perspectives on Complex Systems}, pp. 85--113. \url{https://doi.org/10.1007/978-3-319-38756-7_4}.
+\item Aheleroff, S., Xu, X., Zhong, R. Y., and Lu, Y. (2021). Digital Twin as a Service (DTaaS) in Industry 4.0: An Architecture Reference Model. \textit{Advanced Engineering Informatics}, 47, 101225. \url{https://doi.org/10.1016/j.aei.2020.101225}.
+\item Official BPI2017 benchmark description and van Dongen's BPI2019 dataset record, cited to support the domain distinction.
+\end{enumerate}
+Thank you for helping us clarify the scope and interpretation of the contribution.
+
+Sincerely,\par Edwin Montes-Orozco\par On behalf of the authors
+\end{document}

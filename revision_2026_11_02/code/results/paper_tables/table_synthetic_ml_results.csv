@@ -1,0 +1,5 @@
+Target,Best Model (No Network),F1 (No Network),Best Model (Network),F1 (Network),Improvement (%)
+Bottleneck,Random Forest,0.7443,XGBoost,0.7983,7.25
+Defect,Random Forest,0.0,Random Forest,0.0,N/A
+Delay,XGBoost,0.8078,Random Forest,0.8317,2.96
+Rework,Random Forest,0.25,Random Forest,1.0,300.0

@@ -1,0 +1,9 @@
+source,target,frequency
+Cutting,Machining,1200
+Machining,Initial Inspection,1200
+Initial Inspection,Assembly,1200
+Assembly,Functional Testing,1200
+Functional Testing,Packaging,1068
+Functional Testing,Rework,132
+Packaging,Release,1200
+Rework,Packaging,132

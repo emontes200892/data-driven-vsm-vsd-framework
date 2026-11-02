@@ -1,0 +1,13 @@
+dataset,target,model,network_features,features,train_events,test_events,delay_threshold_train_only,bottleneck_cycle_threshold_train_only,bottleneck_waiting_threshold_train_only,accuracy,precision,recall,f1,roc_auc,note
+bpi2017,delay_proxy,Random Forest,False,cycle_time_min|queue_before|wip_before,175000,37500,0.0,759.6477450932103,0.0,,,,,,single_class_target
+bpi2017,delay_proxy,XGBoost,False,cycle_time_min|queue_before|wip_before,175000,37500,0.0,759.6477450932103,0.0,,,,,,single_class_target
+bpi2017,delay_proxy,Random Forest,True,cycle_time_min|queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,175000,37500,0.0,759.6477450932103,0.0,,,,,,single_class_target
+bpi2017,delay_proxy,XGBoost,True,cycle_time_min|queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,175000,37500,0.0,759.6477450932103,0.0,,,,,,single_class_target
+bpi2017,bottleneck_proxy,Random Forest,False,queue_before|wip_before,175000,37500,0.0,759.6477450932103,0.0,,,,,,single_class_target
+bpi2017,bottleneck_proxy,XGBoost,False,queue_before|wip_before,175000,37500,0.0,759.6477450932103,0.0,,,,,,single_class_target
+bpi2017,bottleneck_proxy,Random Forest,True,queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,175000,37500,0.0,759.6477450932103,0.0,,,,,,single_class_target
+bpi2017,bottleneck_proxy,XGBoost,True,queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,175000,37500,0.0,759.6477450932103,0.0,,,,,,single_class_target
+bpi2017,rework_proxy,Random Forest,False,cycle_time_min|waiting_time_min|queue_before|wip_before,175000,37500,0.0,759.6477450932103,0.0,0.8643733333333333,0.12820063135741844,0.8640661938534279,0.22327428222357973,0.9314308095601302,
+bpi2017,rework_proxy,XGBoost,False,cycle_time_min|waiting_time_min|queue_before|wip_before,175000,37500,0.0,759.6477450932103,0.0,0.9774133333333334,0.0,0.0,0.0,0.9375253391855161,
+bpi2017,rework_proxy,Random Forest,True,cycle_time_min|waiting_time_min|queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,175000,37500,0.0,759.6477450932103,0.0,1.0,1.0,1.0,1.0,1.0,
+bpi2017,rework_proxy,XGBoost,True,cycle_time_min|waiting_time_min|queue_before|wip_before|degree_centrality|betweenness_centrality|closeness_centrality|eigenvector_centrality,175000,37500,0.0,759.6477450932103,0.0,1.0,1.0,1.0,1.0,1.0,

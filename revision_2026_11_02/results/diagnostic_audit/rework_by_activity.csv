@@ -1,0 +1,9 @@
+activity,events,positives,label_values,positive_rate
+Assembly,1200,0,1,0.0
+Cutting,1200,0,1,0.0
+Functional Testing,1200,0,1,0.0
+Initial Inspection,1200,0,1,0.0
+Machining,1200,0,1,0.0
+Packaging,1200,0,1,0.0
+Release,1200,0,1,0.0
+Rework,132,132,1,1.0
